@@ -1,4 +1,46 @@
 
+/* Publications Section */
+.publication-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.publication {
+  background: #f7faff;
+  border-left: 4px solid #2361a9;
+  padding: 20px 24px 16px 24px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(35,97,169,0.04);
+}
+.pub-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #174a7c;
+  margin-bottom: 6px;
+}
+.pub-authors {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 4px;
+}
+.pub-meta {
+  font-size: 0.95rem;
+  color: #2361a9;
+  margin-bottom: 6px;
+}
+.pub-links {
+  font-size: 0.95rem;
+}
+.pub-links a {
+  color: #2361a9;
+  text-decoration: underline;
+  margin-right: 8px;
+  transition: color 0.2s;
+}
+.pub-links a:hover {
+  color: #174a7c;
+}
+
 
 html, body {
   font-family: 'Roboto', 'Helvetica', sans-serif;
