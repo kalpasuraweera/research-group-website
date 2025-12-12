@@ -45,10 +45,18 @@
       <section id="about">
         <h1>About us</h1>
         <p>
-          Welcome to the website of <b>Research Group Name</b>. Our research focuses on computer architecture and hardware design for improving system security. Specific projects include protection of application secrets, support for isolated execution, defenses against side channel attacks, and more. We also investigate efficient information flow tracking and hardware supported malware detection. Please check our publication page for more details. Our work is supported by multiple grants from various foundations.
+          Welcome to the website of <b>Research Group Name</b>. Our research group is dedicated to advancing the field of secure computing systems. We focus on innovative hardware and software co-design, trusted execution environments, and privacy-preserving computation. Our team collaborates with academic and industry partners to address real-world security challenges.
+        </p>
+        <ul>
+          <li>Founded: 2017</li>
+          <li>Location: Engineering Building, Room 123, Example University</li>
+          <li>Contact: researchgroup@email.edu</li>
+        </ul>
+        <p>
+          <b>Research Areas:</b> Secure architectures, side-channel defenses, trusted hardware, privacy, malware detection, and more.
         </p>
       </section>
-      <section id="news">
+      <section id="news" style="display:none;">
         <h1>News</h1>
         <div class="news-item">
           <div class="news-date">August 2025</div>
@@ -58,8 +66,52 @@
           <div class="news-date">July 2025</div>
           <div class="news-title"><b>PROJECT-Y</b> received best paper award at Symposium ABC.</div>
         </div>
+        <div class="news-item">
+          <div class="news-date">June 2025</div>
+          <div class="news-title">Group welcomes new PhD student Taylor Smith.</div>
+        </div>
+      </section>
+      <section id="people" style="display:none;">
+        <h1>People</h1>
+        <h2>Faculty</h2>
+        <ul>
+          <li><b>Dr. Morgan Lee</b> – Principal Investigator. Research interests: secure processors, trusted execution, privacy.</li>
+        </ul>
+        <h2>PhD Students</h2>
+        <ul>
+          <li>Alex Kim – Hardware security, side-channel analysis</li>
+          <li>Jamie Patel – Malware detection, trusted computing</li>
+          <li>Taylor Smith – Secure enclaves, privacy-preserving computation</li>
+        </ul>
+        <h2>Alumni</h2>
+        <ul>
+          <li>Jordan Chen (now at SecureTech Inc.)</li>
+        </ul>
+      </section>
+      <section id="publications" style="display:none;">
+        <h1>Publications</h1>
+        <ul>
+          <li><b>SecureFlow: Efficient Information Flow Tracking in Modern CPUs</b><br>
+            M. Lee, A. Kim, J. Patel. <i>Proc. of the 2025 Symposium on Secure Computing</i>.</li>
+          <li><b>Side-Channel Resilient Processor Design</b><br>
+            T. Smith, M. Lee. <i>Journal of Hardware Security, 2024</i>.</li>
+          <li><b>Malware Detection with Hardware Support</b><br>
+            J. Patel, M. Lee. <i>Conference on Trusted Systems, 2023</i>.</li>
+        </ul>
       </section>
     </main>
+    <script>
+      // Simple tab navigation
+      document.querySelectorAll('.nav a').forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const target = this.getAttribute('href').replace('#', '');
+          document.querySelectorAll('main section').forEach(sec => {
+            sec.style.display = (sec.id === target) ? '' : 'none';
+          });
+        });
+      });
+    </script>
   </body>
 </html>
   </body>
